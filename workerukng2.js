@@ -754,7 +754,7 @@ else if (source.provider === "Instarem") payload = await handleInstarem(page, so
 }
 
 async function main() {
-  const sources = JSON.parse(fs.readFileSync("./sources-n2g.json", "utf8"));
+  const sources = JSON.parse(fs.readFileSync("./sources-ng2.json", "utf8"));
   const browser = await chromium.launch({ headless: HEADLESS });
 
   for (const source of sources) {
